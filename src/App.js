@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import Home from './Container/Home'
 import Profile from './Container/Profile'
+import Login from './Container/Login'
+import SignUp from './Container/SignUp'
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,6 +24,16 @@ function App() {
       <Route exact path='/profile' render= {
         () => {
           return <Profile />
+        }
+      }/>
+      <Route exact path='/login' render= {
+        () => {
+          return <Login />
+        }
+      }/>
+      <Route exact path='/signup' render= {
+        () => {
+          return <SignUp />
         }
       }/>
     </Router>
